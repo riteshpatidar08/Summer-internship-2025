@@ -1,0 +1,21 @@
+h1 {
+  color: #3ec737;
+  color: rgb(29, 29, 154);
+  color: rgba(34, 67, 56, 0.9);
+  color: hsl(190 94.9% 84.7%);
+  color: oklch(0.6635 0.2092 337);
+  background-color: #344224;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Noto Sans;
+  font-style: italic;
+  line-height: 1.5;
+  word-spacing: 30px;
+  letter-spacing: 1;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
