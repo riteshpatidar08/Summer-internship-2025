@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::before {
+            content: '⭐';
+        }
+
+        p::after {
+            content : '✔️'
+        }
+
+        ::selection  {
+        background-color : red ;
+        color : white
+        }
+
+        p::first-line {
+            color : blue ;
+            font-size: 40px;
+        }
+
+        .btn {
+            padding  : 40px 100px ;
+            border : none ;
+            border-radius: 20px;
+            color : white
+        }
+
+        .btn-success {
+            background-color: green;
+        }
+
+        .btn-danger { 
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<button class="btn btn-success">FIX ME</button>
+</body>
+</html>

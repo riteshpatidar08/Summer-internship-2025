@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: black;
+            color: white;
+            height: 100vh;
+            padding: 70px;
+            display: grid;
+            gap : 10px ;
+            grid-template-areas: "header header header"
+                                  "main main thirdbox"
+                                  "main main fourthbox" ;
+           
+          }
+
+          .item {
+            background-color: mediumaquamarine;
+            padding: 20px;
+          }
+
+          .item1 {
+        grid-area: header ;
+          }
+
+          .item2 {
+            grid-area : main
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <div class="item item4">item4</div>
+        <div class="item item5">item5</div>
+        <div class="item item6">item6</div>
+        <div class="item item7">item7</div>
+        <div class="item item8">item8</div>
+        <div class="item item9">item9</div>
+      </div>  
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: black;
+        color: white;
+        height: 100vh;
+        padding: 70px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 400px));
+        gap: 10px;
+      }
+
+      .item {
+        background-color: mediumaquamarine;
+        padding: 20px;
+      }
+
+      @media (max-width : 162px){
+        .container {
+            grid-template-columns: 100px;
+            padding : 2px
+        }
+      }
+      @media (max-width:480px){
+        .container {
+            display: grid;
+            grid-template-columns: 1fr  ;
+        }
+      }
+      @media (min-width:481px) and (max-width : 767px){
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">item1</div>
+      <div class="item item2">item2</div>
+      <div class="item item3">item3</div>
+      <div class="item item4">item4</div>
+      <div class="item item5">item5</div>
+      <div class="item item6">item6</div>
+      <div class="item item7">item7</div>
+      <div class="item item8">item8</div>
+      <div class="item item9">item9</div>
+    </div>
+  </body>
+</html>

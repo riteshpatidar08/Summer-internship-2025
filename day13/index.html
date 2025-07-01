@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        color: white;
+        height: 200vh;
+        --_gradient-blend-mode: normal;
+        --_gradient-blur: 0px;
+
+        background: radial-gradient(at 33% 16%, #020103 0px, transparent 50%),
+          radial-gradient(at 69% 8%, #234f3d 0px, transparent 50%) #000000;
+        mix-blend-mode: var(--_gradient-blend-mode);
+
+        backdrop-filter: blur(var(--_gradient-blur)) contrast(100%)
+          brightness(100%);
+        -webkit-backdrop-filter: blur(var(--_gradient-blur)) contrast(100%)
+          brightness(100%);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        position: sticky;
+        top: 0;
+
+        background: rgba(255, 255, 255, 0.06);
+
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.3px);
+
+        padding: 10px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .text {
+        color: white;
+        height: 400px;
+        margin: 40px;
+        font-weight: 900;
+        font-size: 80px;
+      }
+
+      span {
+        background: linear-gradient(
+          90deg,
+          #db3247 0%,
+          #c52f52 40%,
+          #ffaacc 100%
+        );
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>Hero Ui</div>
+      <nav>
+        <div>Home</div>
+        <div>Home</div>
+        <div>Home</div>
+        <div>Home</div>
+      </nav>
+    </header>
+    <div class="text">
+      Apply your own
+      <span>theming</span> decisions.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 400px;
+        background-color: red;
+        border-radius: 10px;
+      }
+
+      button {
+        background-color: oklch(59.6% 0.145 163.225);
+        color: white;
+        border: none;
+        padding: 30px 80px;
+        border-radius: 10px;
+        margin: 20px;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+      }
+
+      button:hover {
+        transform: scale(1.1) skew(20deg);
+        background-color: white;
+        color: oklch(59.6% 0.145 163.225);
+        border: 1px solid oklch(59.6% 0.145 163.225);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <button>Search</button>
+  </body>
+</html>

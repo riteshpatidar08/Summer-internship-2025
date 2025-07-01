@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            width:  200px;
+            height: 200px;
+            border-radius: 50% ;
+            background-color: red;
+       animation-name: rotate;
+       animation-duration:2s;
+       animation-timing-function: ease in;
+       animation-iteration-count: infinite;
+       animation-fill-mode: backwards;
+       position: relative;
+       
+        }
+
+        
+
+@keyframes rotate {
+    0% ,100% {
+       opacity: 0;
+    }
+
+    50% {
+       opacity: 1;
+    }
+
+ 
+}
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

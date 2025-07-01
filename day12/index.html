@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg');
+        background-repeat: no-repeat;
+        background-position: start;
+        background-size: cover;
+        position: relative;
+      }
+
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.819);
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        z-index: -10;
+      }
+
+      h1 {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <h1>Heading</h1>
+    <button>Submit</button>
+  </body>
+</html>

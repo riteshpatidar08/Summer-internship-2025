@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: 'Quicksand', sans-serif;
+      }
+
+      header {
+        display: flex;
+
+        justify-content: space-between;
+        padding: 10px 40px;
+        align-items: center;
+        height: 40px;
+        color: white;
+      }
+
+      .list_links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .links a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .links li {
+        list-style-type: none;
+      }
+
+      .title {
+        font-weight: 800;
+        font-size: 20px;
+      }
+
+      .nav_right {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        background-color: oklch(59.6% 0.145 163.225);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+      }
+
+      .hero_section {
+        height: 100vh;
+        background-color: oklch(20.8% 0.042 265.755);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -100;
+      }
+      .wrapper {
+        display: flex;
+        height: 100%;
+      }
+
+      .box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+        color: white;
+      }
+
+      .box2 {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
+      .heading {
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="title">Adham</div>
+      <nav class="links">
+        <ul class="list_links">
+          <li><a href="">Home</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Buying</a></li>
+          <li><a href="">Renting</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav_right">
+        <p>Login</p>
+        <button>Signup</button>
+      </div>
+    </header>
+
+    <div class="hero_section">
+      <div class="wrapper">
+        <div class="box1">
+          <h1 class="heading">Your house is waiting for you!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            laudantium quisquam aliquid non aspernatur odio veniam rerum
+            numquam, odit iure quia quis aut veritatis debitis eius, illo quidem
+            ipsum quaerat.
+          </p>
+        </div>
+        <div class="box2">
+          <img
+            src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?_gl=1*1f6iq9w*_ga*MTM5OTk3NzA4OS4xNzUxMTA5MzE1*_ga_8JE65Q40S6*czE3NTExMDkzMTUkbzEkZzAkdDE3NTExMDkzMTUkajYwJGwwJGgw"
+            width="600"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

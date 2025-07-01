@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: black;
+        padding: 20px;
+        min-height: 50vh;
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+          'aside header header box1'
+          'aside box2 box3 box4'
+          'aside box5 box6 box4';
+      }
+
+      .item {
+        padding: 20px;
+        background-color: red;
+      }
+
+      .item1 {
+        grid-area: aside;
+      }
+
+      .item2 {
+        grid-area: header;
+      }
+
+      .item3 {
+        grid-area: box1;
+      }
+
+      .item4 {
+        grid-area: box2;
+      }
+
+      .item5 {
+        grid-area: box3;
+      }
+
+      .item6 {
+        grid-area: box4;
+      }
+
+      .item7 {
+        grid-area: box5;
+      }
+
+      .item8 {
+        grid-area: box6;
+      }
+
+      @media (max-width: 480) {
+        .container {
+          grid-template-areas:
+            'aside'
+            'header'
+            'box1';
+        }
+
+        .item1 {
+          grid-area: aside;
+        }
+      }
+
+      input {
+        padding: 20px 6px;
+        width: 100%;
+        border: 1px solid oklch(59.6% 0.145 163.225);
+        border-radius: 10px;
+      }
+
+      .wrapper {
+        position: relative;
+        width: 400px;
+      }
+
+
+      button {
+        position: absolute;
+        top : 10px ;
+        right: 0;
+        background-color: oklch(59.6% 0.145 163.225);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">item1</div>
+      <div class="item item2">item2</div>
+      <div class="item item3">item3</div>
+      <div class="item item4">item4</div>
+      <div class="item item5">item5</div>
+      <div class="item item6">item6</div>
+      <div class="item item7">item7</div>
+      <div class="item item8">item8</div>
+    </div>
+
+    <div class="wrapper">
+      <input />
+      <button>Search</button>
+    </div>
+  </body>
+</html>

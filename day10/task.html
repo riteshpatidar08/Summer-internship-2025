@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+        box-sizing: border-box;
+        margin : 0 ;
+        padding : 0 ;
+
+       }
+       
+       html  {
+        font-family: sans-serif;
+       }
+
+       nav {
+        background-color: #686868;
+        height: 60px;
+        display: flex;
+       padding : 4px ;
+       gap:10px ;
+        align-items: center;
+   
+           }
+
+       a {
+        color  : white ;
+        text-decoration: none;
+       }
+
+       ul {
+        display: flex;
+        align-items: center;
+        gap :20px
+       }
+        p{
+            display: none;
+        }
+
+       li {
+        list-style-type: none;
+       }
+       #menu-input {
+        display: none;
+     }
+       .menu {
+        font-size: 20px;
+      
+       }
+
+       #input-check:checked ~ p  {
+        display: block;
+
+       }
+
+       @media (max-width : 480px){
+        nav {
+          display:flex;
+            flex-direction: column;
+            height: auto;
+
+            
+        }
+
+        ul {
+            flex-direction: column;
+        }
+
+        .menu{
+            display: block
+        }
+       }
+    </style>
+</head>
+<body>
+  <nav onclick="console.log('click')">
+    <input type="checkbox" id='menu-input' />
+     <label id="menu-input" class="menu">&#9776</label>
+  
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+    </ul>
+  </nav> 
+  <input type="checkbox" id="input-check">
+  <label for="input-check">&#9776</label>
+  <p>para</p>
+  <h1>Heading</h1>
+</body>
+</html>
