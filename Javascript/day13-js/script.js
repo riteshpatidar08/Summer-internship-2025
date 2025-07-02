@@ -53,13 +53,12 @@ console.log(data);
 data = 'we are learning reactjs';
 console.log(data);
 
-//NOTE REDECLARATION 
+//NOTE REDECLARATION
 // let data = 'hello' ;
 // console.log(data)❌
 
-
-//NOTE 2nd const 
-const phoneNumber = 342434 ;
+//NOTE 2nd const
+const phoneNumber = 342434;
 
 //❌NOTE REASSIGNING CONST
 // phoneNumber = 43242;
@@ -68,11 +67,18 @@ const phoneNumber = 342434 ;
 //❌NOTE REDECLARATION CONST
 // const phoneNumber = 2434 ;
 
-//NOTE VAR 
-var companyName = 'meta' ;
-//NOTE✔️ REASSIGNING THE VAR 
-companyName = 'oracle' ;
-console.log(companyName)
+//NOTE VAR
+var companyName = 'meta';
+//NOTE✔️ REASSIGNING THE VAR
+companyName = 'oracle';
+console.log(companyName);
 //NOTE✔️ REDECLARING THE VAR ;
-var companyName = 'ibm' ;
-console.log(companyName)
+var companyName = 'ibm';
+console.log(companyName);
+
+
+
+//use case let , const  ;
+
+//NOTE TYPE CONVERSION AND COERSION
+
