@@ -1,0 +1,6 @@
+//Q1 . difference null and undefined ? 
+//Q2 . const data ; 
+//Q3 Type Coersion ? 
+//Q4   +'5' ?
+//Q5  '6' - 5 ?
+//Q6 truthy and falsy values ?
