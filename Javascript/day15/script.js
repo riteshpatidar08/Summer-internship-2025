@@ -189,3 +189,6 @@ function knowAboutme(key){
 
 console.log(knowAboutme('first'))
 
+
+//Array and object 
+

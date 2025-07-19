@@ -1,0 +1,57 @@
+// length  
+// toLowerCase()  
+// toUpperCase()  
+// trim()  
+// trimStart()  
+// trimEnd()  
+// includes()  
+// startsWith()  
+// endsWith()  
+// indexOf()  
+// lastIndexOf()  
+// slice()  
+// substring()  
+// substr()  
+// replace()  
+// replaceAll()  
+// padStart()  
+// padEnd()  
+// repeat()  
+// split()  
+// charAt()  
+
+// concat()  
+// match()  
+// matchAll()  
+
+
+
+1. Extract Initials
+Given a full name string "John Michael Smith", extract the initials and return "J.M.S."
+
+
+//NOTE methods to use  =>  charAt(0) / array / map /
+
+
+2. Snake Case to Camel Case
+Given a string in snake_case like "convert_this_string", convert it to camelCase: "convertThisString"
+
+//method => split('_') map((item,index));
+
+//NOTE  
+
+3. Find Longest Word
+Given a sentence "We are learning Javascript", find and return the longest word. If there are multiple words of the same length, return the first one.
+
+//NOTE reduce
+
+//NOTE
+
+4. Reverse Words but Keep Order
+Given a string "Hello World JavaScript", reverse each individual word but keep them in the same order: "olleH dlroW tpircSavaJ"
+
+//array => [
+"Hello" , "World" , "Javascript"
+].map(word => word.split('').reverse().join())
+//reverse 
+//NOTE
