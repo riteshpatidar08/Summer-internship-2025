@@ -165,9 +165,14 @@ console.log(newLaptop);
 //NOTE note object = to create shallow copy , merge two object ,
 //NOTE IMP => update any specific property values
 
-//REST OPERTOR(...) ;
+//NOTE REST OPERTOR(...) ;
 
 //NOTE rest operator packs the remaining values of an array into a variable and give an array of remaining values.
 
 const [first, second, ...third] = [1, 2, 3, 4, 5, 6];
 console.log(first, second, third);
+
+
+const shares = ['mrf' , 'polycab' ,'tata'] ;
+
+const [a,b,c='grse'] = [shares] ;
