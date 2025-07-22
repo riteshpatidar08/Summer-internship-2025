@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log('hello');
+      //async
+      setTimeout(() => {
+        console.log('this is settimeout');
+      }, 5000);
+
+      setInterval(() => {
+        console.log('i will after every specific time');
+      }, 1000);
+      //synchronous
+
+      console.log('hi');
+      //NOTE fetch() function always return a promise  , promise is a result of some async task completion , fetch() function is a async function which is returning a promise , promise have two state => PENDING AND FULFILLED IF THE promise is fulfilled its going to be either success or failed.
+
+      fetch('https://fakestoreapi.com/products')
+        .then((res) => {
+          return res.json();
+        })
+        .then((dat) => {
+          console.log(dat);
+        });
+
+      //.then()
+    </script>
+  </body>
+</html>
+
+//Note callback hell => promises => //country list fetch promises = {}
